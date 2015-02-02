@@ -3,7 +3,7 @@ package eager.QuickFind;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class RuntimeArray {
+public class SimpleUnionFind {
 
 	private static int[] inputArray;
 	private static Scanner scan;
@@ -71,7 +71,7 @@ public class RuntimeArray {
 	}
 
 	public static void setInputArray(int[] inputArray) {
-		RuntimeArray.inputArray = inputArray;
+		SimpleUnionFind.inputArray = inputArray;
 	}
 
 }
