@@ -24,10 +24,14 @@ public class RuntimeArray {
 			System.out.println("invlaid integer");
 		}
 		int[] inputAr = new int[n];
+		initSimpleUnionFind(inputAr);
+		return inputAr;
+	}
+
+	public static void initSimpleUnionFind(int[] inputAr) {
 		for (int i = 0; i < inputAr.length; i++) {
 			inputAr[i] = i;
 		}
-		return inputAr;
 	}
 
 	public static void main(String[] args) {
@@ -42,7 +46,7 @@ public class RuntimeArray {
 				union(p, q);
 			}
 		}while(!isConnected);
-			scan.close();
+		scan.close();
 		for (int i = 0; i < inputArray.length; i++) {
 			System.out.println(inputArray[i]);
 		}
@@ -60,6 +64,14 @@ public class RuntimeArray {
 			if(inputArray[i] == pid)
 				inputArray[i] = inputArray[q];
 		}
+	}
+
+	public static int[] getInputArray() {
+		return inputArray;
+	}
+
+	public static void setInputArray(int[] inputArray) {
+		RuntimeArray.inputArray = inputArray;
 	}
 
 }
