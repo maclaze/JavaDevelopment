@@ -55,6 +55,8 @@ public class UnionFindBase {
         this.inputArray[index] = value;
     }
 
+
+
     public void getInputArraySize()
     {
         try {
