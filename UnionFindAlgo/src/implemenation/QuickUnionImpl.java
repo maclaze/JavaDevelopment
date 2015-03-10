@@ -24,7 +24,7 @@ public class QuickUnionImpl extends UnionFindBase implements UnionFindInterface 
     public void union(int p, int q) {
         if (! find(p, q))
         {
-            setRootOf(p, getRootOf(q));
+            this.setRootOf(p, getRootOf(q));
         }
     }
 
